@@ -1,0 +1,26 @@
+description = "Spring Zw Test"
+
+apply plugin: "kotlin"
+
+//plugins {
+//    id 'java'
+//}
+
+//group 'org.springframework'
+//version '5.2.13.BUILD-SNAPSHOT'
+
+//repositories {
+//    mavenCentral()
+//}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    compile(project(":spring-aop"))
+    compile(project(":spring-context"))
+    optional("org.aspectj:aspectjweaver")
+}
+
+//test {
+//    useJUnitPlatform()
+//}
